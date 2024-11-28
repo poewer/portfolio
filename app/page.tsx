@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <Navbar />
       <main className="pt-20"> {/* Dodaj padding, aby treść nie nachodziła na navbar */}
-        <section id="projekty" className="min-h-screen bg-gray-100 p-6 flex flex-col">
+        <section id="projekty" className="min-h-screen bg-gray-100 p-6 pt-20 flex flex-col">
           <h2 className="text-3xl font-bold mb-6 text-center">Projekty</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project, index) => (

@@ -3,7 +3,7 @@ export const projects = [
         title: "BLUEBOX-AI",
         technologies: {
             languages: ["Python", "Bash", "JavaScript (React)"],
-            frameworks: ["FastAPI", "Sanic", "SQLAlchemy", "BeautifulSoup", "Next.js"],
+            frameworks: ["Sanic", "FastAPI", "SQLAlchemy", "BeautifulSoup", "Next.js", "Zato"],
             databases: ["PostgreSQL", "Elasticsearch", "DBrave"],
             tools: [
                 "Docker",
@@ -32,42 +32,41 @@ export const projects = [
             os: ["Linux", "Windows"],
         },
         description:
-            "System BLUEBOX-AI wspierający integrację procesów biznesowych w oparciu o modele sztucznej inteligencji. Projekt realizowany we współpracy z firmą IBPM S.A. System umożliwia automatyzację procesów biznesowych, integrację z różnymi narzędziami w chmurze (Azure, SharePoint) oraz wykorzystanie OpenAI i ChatGPT do analizy danych i generowania odpowiedzi.",
+            "System wspierający integrację procesów biznesowych w oparciu o sztuczną inteligencję i mikroserwisy. Projekt skoncentrowany na automatyzacji procesów oraz integracji z różnorodnymi narzędziami chmurowymi.",
         role:
-            "Developer backendu - pisanie API, integracja z RabbitMQ oraz wdrażanie kontenerów Dockera dla zautomatyzowanego uruchamiania środowiska. W ramach projektu realizowałem integrację z Microsoft Azure oraz SharePoint, a także implementację funkcji wykorzystujących OpenAI i ChatGPT. Przygotowywałem dane do fine-tuningu modeli OpenAI, w tym ekstrakcję i przetwarzanie danych z dokumentów przy użyciu Apache Tika oraz analizę i transformację danych z plików CSV i Excel za pomocą Pandas. Dodatkowo realizowałem scrapowanie stron internetowych przy użyciu Selenium i BeautifulSoup w celu pozyskiwania danych. Byłem odpowiedzialny za debugowanie kodu, rozwiązywanie błędów, integrację z zewnętrznymi API (nieujawnione) oraz krótki epizod pracy z Grafana API do automatyzacji monitorowania systemu.",
+            "Developer backendu odpowiedzialny za implementację mikroserwisów, integrację z API oraz automatyzację procesów z wykorzystaniem Zato. Rozwijałem backend w Pythonie, przygotowywałem dane do fine-tuningu modeli AI oraz wdrażałem testy integracyjne w pytest.",
         methodology:
-            "Praca w metodologii Agile z codziennymi standupami (daily stand-ups), na których omawiano postępy prac oraz planowanie kolejnych zadań. Zadania były zarządzane w Jira i podzielone na statusy: 'To Do', 'In Progress', 'Review' oraz 'Done'. Współpraca zespołowa obejmowała częste code review oraz retrospekcje sprintów.",
+            "Agile z codziennymi standupami, retrospekcjami oraz zarządzaniem zadaniami w Jira. Współpraca zespołowa obejmowała code review i szkolenia.",
         key_contributions: [
-            "Projektowanie i rozwój skalowalnych API w FastAPI oraz Sanic.",
-            "Integracja z Microsoft Azure i SharePoint w celu synchronizacji danych biznesowych.",
-            "Implementacja funkcji opartych na OpenAI i ChatGPT, w tym fine-tuning modeli do specyficznych wymagań klienta.",
-            "Tworzenie procesów ETL do przygotowywania danych wejściowych do fine-tuningu modeli AI.",
-            "Ekstrakcja danych z dokumentów (PDF, Word) za pomocą Apache Tika.",
-            "Przetwarzanie danych z plików Excel i CSV z użyciem Pandas.",
-            "Realizacja procesów scrapowania danych z wykorzystaniem Selenium i BeautifulSoup.",
-            "Integracja z Grafana API w celu automatyzacji procesów monitorowania.",
-            "Wdrażanie i utrzymywanie testów jednostkowych w pytest, w tym pokrycie kluczowych funkcji biznesowych.",
-            "Debugowanie kodu i rozwiązywanie błędów w kluczowych modułach systemu.",
-            "Integracja z zewnętrznymi API (nieujawnione) w celu rozszerzenia funkcjonalności systemu.",
-            "Tworzenie komponentów frontendu w React/Next.js jako wsparcie dla zespołu frontendowego.",
-            "Przygotowywanie dokumentacji technicznej obejmującej API, procesy CI/CD oraz instrukcje wdrożenia.",
-            "Prowadzenie szkoleń wewnętrznych z zakresu integracji OpenAI API i SharePoint.",
-            "Udział w spotkaniach z klientami w celu zbierania wymagań i prezentowania postępów projektu.",
+            "Projektowanie API i mikroserwisów w Zato i FastAPI.",
+            "Integracja z narzędziami: Microsoft Azure, SharePoint, RabbitMQ.",
+            "Przygotowanie danych dla fine-tuningu modeli AI.",
+            "Automatyzacja procesów monitorowania za pomocą Grafana API.",
+            "Testowanie i optymalizacja przepływów danych z wykorzystaniem RabbitMQ.",
+            "Debugowanie kluczowych problemów systemowych i analiza logów.",
         ],
         duration: "Marzec 2024 - Obecnie",
     },
-
     {
         title: "Integracja w ACE Toolkit IBM",
         technologies: {
-            languages: ["ESQL"],
+            languages: ["ESQL", "Java"],
             frameworks: ["IBM App Connect Enterprise (ACE)"],
+            tools: ["Postman", "Git", "Swagger Editor", "SoapUI"],
             apis: ["REST API", "SOAP"],
             data_formats: ["XML", "JSON"],
         },
         description:
-            "Rozwój i utrzymanie przepływów integracyjnych dla aplikacji biznesowych w oparciu o IBM ACE Toolkit. Projekt zrealizowany w ramach dużego przedsiębiorstwa (bez możliwości podania klienta).",
-        role: "Specjalista ds. integracji - projektowanie i optymalizacja przepływów danych, implementacja logiki w ESQL oraz dostosowywanie interfejsów REST i SOAP.",
+            "Rozwój i utrzymanie integracji w środowisku IBM ACE Toolkit z naciskiem na automatyzację procesów i tworzenie skalowalnych przepływów danych.",
+        role:
+            "Specjalista ds. integracji - rozwój nowych interfejsów API, optymalizacja istniejących przepływów, oraz analiza i rozwiązywanie błędów w środowisku produkcyjnym.",
+        methodology: "SCRUM z iteracjami dwutygodniowymi oraz retrospekcjami.",
+        key_contributions: [
+            "Tworzenie i testowanie przepływów integracyjnych SOAP/REST w IBM ACE.",
+            "Automatyzacja procesów integracyjnych i implementacja mikroserwisów.",
+            "Optymalizacja wydajności przepływów danych w środowiskach produkcyjnych.",
+            "Wsparcie klienta w implementacji i konfiguracji systemów zewnętrznych.",
+        ],
         duration: "Marzec 2023 - Marzec 2024",
     },
     {
@@ -78,9 +77,15 @@ export const projects = [
             tools: ["API Skype/Teams/SharePoint"],
         },
         description:
-            "Wytwarzanie systemu automatyzacji organizacji informacji o pracownikach, profili zawodowych, portfolio, ścieżek rozwoju między poziomami wiedzy. Generowanie unikalnych ID dla każdego pracownika. Automatyzacja urodzin, powiadomień dla działu HR o kończących się umowach, szkoleniach i innych istotnych wydarzeniach.",
-        role: "Full-stack developer - projektowanie skryptów automatyzujących, integracja z API Skype/Teams/SharePoint, tworzenie powiadomień dla działu HR oraz wdrażanie funkcji analitycznych w Excel i VBA.",
-        duration: "2022 - Luty 2023",
+            "System automatyzacji informacji o pracownikach, zarządzania profilami zawodowymi i ścieżkami rozwoju, wraz z funkcjonalnościami analitycznymi i raportowymi.",
+        role:
+            "Full-stack developer - rozwój aplikacji automatyzujących zarządzanie informacjami HR, integracja z API oraz wdrożenie powiadomień automatycznych.",
+        key_contributions: [
+            "Projektowanie i rozwój funkcji analitycznych w Excel i VBA.",
+            "Automatyzacja procesów HR z wykorzystaniem Office365 API.",
+            "Integracja systemów zewnętrznych (Teams, Skype, SharePoint).",
+        ],
+        duration: "Listopad 2022 - Marzec 2023",
     },
     {
         title: "Testy i dokumentacja",
@@ -91,20 +96,38 @@ export const projects = [
         description:
             "Projekt obejmujący przygotowanie automatycznych testów integracyjnych i jednostkowych oraz dokumentacji technicznej dla systemu informatycznego klienta.",
         role: "Tester i dokumentalista - przygotowanie skryptów testowych, dokumentacji technicznej oraz raportów z testów dla zespołu deweloperskiego.",
+        key_contributions: [
+            "Przygotowanie skryptów testowych przy użyciu Pytest.",
+            "Tworzenie dokumentacji technicznej za pomocą Sphinx.",
+            "Przeprowadzanie testów integracyjnych API z Postman.",
+        ],
         duration: "Marzec 2022 - Marzec 2023",
     },
     {
         title: "Staż z integracji systemów biznesowych",
         technologies: {
-            languages: ["ESQL"],
+            languages: ["ESQL", "Java"],
             frameworks: ["IBM Integration Bus (IIB)"],
-            apis: ["SOAP"],
-            data_formats: ["XML", "JSON"],
-            tools: ["Postman"],
+            apis: ["dane.gov.pl API", "Wewnętrzne API"],
+            data_formats: ["XML", "JSON", "CSV"],
+            tools: ["Postman", "Git", "Swagger Editor", "SoapUI", "ACE Toolkit 11/12"],
         },
         description:
-            "Staż obejmujący pracę nad przepływami danych w szynie integracyjnej IIB (IBM Integration Bus) dla aplikacji biznesowych. Główny cel to rozwój nowych przepływów oraz wsparcie zespołu w debugowaniu istniejących procesów.",
-        role: "Stażysta ds. integracji - implementacja przepływów SOAP, testowanie procesów oraz wsparcie dokumentacyjne zespołu.",
+            "Staż obejmował intensywną pracę nad przepływami danych w szynie integracyjnej IBM Integration Bus (IIB) dla aplikacji biznesowych. Głównym celem było projektowanie i rozwój nowych przepływów, a także wsparcie zespołu w debugowaniu istniejących procesów oraz pomoc początkującym stażystom w zrozumieniu narzędzi i zadań projektowych." +
+            "" +
+            "Codzienne spotkania, trwające około godziny, pozwalały na wymianę wiedzy, omawianie statusów zadań oraz wspólne analizowanie napotkanych problemów. Spotkania te były nagrywane i udostępniane w wewnętrznej bazie wiedzy firmy, która zawierała również szczegółowe materiały szkoleniowe, wymagające wcześniejszego zapoznania się w celu realizacji zadań." +
+            "" +
+            "Realizacja zadań obejmowała zarówno projektowanie przepływów SOAP i REST, jak i tworzenie oraz testowanie procesów integracyjnych, które miały realny wpływ na dalszy rozwój istniejących projektów. Praca wymagała ścisłej współpracy między stażystami, gdyż wiele zadań było wzajemnie zależnych, co sprzyjało rozwojowi umiejętności komunikacyjnych i pracy zespołowej." +
+            "" +
+            "Zadania realizowane w ramach stażu były zróżnicowane – od krótkoterminowych, trwających kilka godzin, po bardziej złożone, wymagające kilku dni pracy. W ramach stażu uczestnicy mieli również okazję samodzielnie projektować i testować przepływy, zapewniając ich zgodność z wymaganiami technicznymi oraz wysoką jakość rozwiązania. Praca przyczyniła się do rozwoju systemów integracyjnych firmy i była istotnym wkładem w tworzenie nowoczesnych rozwiązań integracyjnych.",
+        role: "Stażysta ds. integracji - implementacja przepływów SOAP oraz Rest, testowanie procesów oraz ich wytwarzanie, wsparcie reszty zespołu początkujacych stażystów.",
+        key_contributions: [
+            "Projektowanie przepływów SOAP w IBM Integration Bus.",
+            "Testowanie procesów integracyjnych z Postman.",
+            "Utzymywanie kodu w systemie kontroli wersji Git.",
+            "Wsparcie zespołu w rozwiązywaniu problemów integracyjnych.",
+            "Pomoc w reazlizacji przetwarzania danych w ramach implementacji komunikacji między stworzonymi przepływami.",
+        ],
         duration: "Lipiec 2022 - Październik 2022",
     },
 ];
