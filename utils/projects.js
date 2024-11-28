@@ -121,6 +121,7 @@ export const projects = [
             "" +
             "Zadania realizowane w ramach stażu były zróżnicowane – od krótkoterminowych, trwających kilka godzin, po bardziej złożone, wymagające kilku dni pracy. W ramach stażu uczestnicy mieli również okazję samodzielnie projektować i testować przepływy, zapewniając ich zgodność z wymaganiami technicznymi oraz wysoką jakość rozwiązania. Praca przyczyniła się do rozwoju systemów integracyjnych firmy i była istotnym wkładem w tworzenie nowoczesnych rozwiązań integracyjnych.",
         role: "Stażysta ds. integracji - implementacja przepływów SOAP oraz Rest, testowanie procesów oraz ich wytwarzanie, wsparcie reszty zespołu początkujacych stażystów.",
+        methodology: "SCRUM",
         key_contributions: [
             "Projektowanie przepływów SOAP w IBM Integration Bus.",
             "Testowanie procesów integracyjnych z Postman.",

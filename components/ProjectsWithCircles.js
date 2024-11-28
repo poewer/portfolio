@@ -62,16 +62,16 @@ export default function ProjectsWithCircles() {
             <p className="text-primary mb-4">{projects[selectedProject].duration}</p>
 
             <h3 className="text-lg font-bold text-highlight mb-2">Opis projektu:</h3>
-            <p className="text-primary">{projects[selectedProject].description}</p>
+            <p className="text-primary mb-4">{projects[selectedProject].description}</p>
           </div>
 
           {/* Cienka kreska */}
           <div className="absolute inset-y-0 left-1/2 w-px bg-primary"></div>
 
-          {/* Prawa strona: Technologie */}
-          <div className="pl-8">
+          {/* Prawa strona: Technologie, metodologia i kluczowe wkłady */}
+          <div className="pl-4">
             <h3 className="text-lg font-bold text-highlight mb-2">Stack technologiczny:</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               {Object.entries(projects[selectedProject].technologies).map(
                 ([category, items], index) => (
                   <div key={index}>
@@ -87,6 +87,18 @@ export default function ProjectsWithCircles() {
                 )
               )}
             </div>
+
+            {/* Metodologia */}
+            <h3 className="text-lg font-bold text-highlight mb-2">Metodologia:</h3>
+            <p className="text-primary mb-4">{projects[selectedProject].methodology}</p>
+
+            {/* Kluczowe wkłady */}
+            <h3 className="text-lg font-bold text-highlight mb-2">Kluczowe wkłady:</h3>
+            <ul className="list-disc pl-5 text-primary">
+              {projects[selectedProject].key_contributions.map((contribution, index) => (
+                <li key={index}>{contribution}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
