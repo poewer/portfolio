@@ -2,18 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Kolory w jasnym trybie */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FBE9D0; /* Kremowy (tło główne w jasnym trybie) */
+  --foreground: #244855; /* Głęboki niebieskozielony (tekst główny) */
+  --accent: #356E79; /* Intensywny czerwony (akcenty) */
+  --secondary: #90AEAD; /* Pastelowy turkus (elementy dodatkowe) */
+  --highlight: #874F41; /* Brązowy (nagłówki, ważne elementy) */
 }
 
+/* Kolory w ciemnym trybie */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0A0A0A; /* Bardzo ciemne tło */
+    --foreground: #FBE9D0; /* Kremowy tekst */
+    --accent: #356E79; /* Intensywny czerwony (akcenty) */
+    --secondary: #90AEAD; /* Pastelowy turkus (elementy dodatkowe) */
+    --highlight: #874F41; /* Brązowy (nagłówki, ważne elementy) */
   }
 }
 
+/* Globalne ustawienia */
 html {
   scroll-behavior: smooth;
 }
@@ -22,4 +31,34 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Dodatkowe klasy */
+a {
+  color: var(--foreground);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent); /* Akcent na hover */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--highlight); /* Nagłówki w brązowym kolorze */
+}
+
+button {
+  background-color: var(--accent);
+  color: var(--background);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary); /* Pastelowy turkus na hover */
 }

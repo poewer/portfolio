@@ -2,7 +2,7 @@ export const projects = [
     {
         title: "BLUEBOX-AI",
         technologies: {
-            languages: ["Python", "Bash", "JavaScript (React)"],
+            languages: ["Python3", "Bash", "JavaScript (React)"],
             frameworks: ["Sanic", "FastAPI", "SQLAlchemy", "BeautifulSoup", "Next.js", "Zato"],
             databases: ["PostgreSQL", "Elasticsearch", "DBrave"],
             tools: [
@@ -72,7 +72,7 @@ export const projects = [
     {
         title: "System automatyzacji informacji o pracownikach",
         technologies: {
-            languages: ["Python", "VBA"],
+            languages: ["Python3", "VBA"],
             frameworks: ["Office365", "Excel"],
             tools: ["API Skype/Teams/SharePoint"],
         },
