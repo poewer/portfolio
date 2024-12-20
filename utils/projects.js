@@ -54,55 +54,68 @@ export const projects = [
             frameworks: ["IBM App Connect Enterprise (ACE)"],
             tools: ["Postman", "Git", "Swagger Editor", "SoapUI"],
             apis: ["REST API", "SOAP"],
-            data_formats: ["XML", "JSON"],
+            data_formats: ["XML", "JSON"]
         },
-        description:
-            "Rozwój i utrzymanie integracji w środowisku IBM ACE Toolkit z naciskiem na automatyzację procesów i tworzenie skalowalnych przepływów danych.",
-        role:
-            "Specjalista ds. integracji - rozwój nowych interfejsów API, optymalizacja istniejących przepływów, oraz analiza i rozwiązywanie błędów w środowisku produkcyjnym.",
-        methodology: "SCRUM z iteracjami dwutygodniowymi oraz retrospekcjami.",
+        description: "Projekt realizowany dla klienta z branży ubezpieczeniowej, koncentrujący się na rozwoju i utrzymaniu integracji w środowisku IBM ACE Toolkit. Kluczowe zadania obejmowały wdrażanie nowych funkcjonalności, takich jak REST API, oraz optymalizację istniejących przepływów opartych na SOAP. Pracowałem na środowisku developerskim, gdzie testowałem swoje rozwiązania przed przekazaniem ich dedykowanym testerom do pełnej weryfikacji. Po pozytywnych testach funkcjonalności były przekazywane administratorom i architektom, którzy decydowali o ich wdrożeniu na środowisko produkcyjne. Uczestniczyłem w spotkaniach, na których prezentowałem moje rozwiązania klientowi, oraz realizowałem tygodniowe zadanie związane ze standaryzacją struktury danych JSON, wdrażanej w systemie AS400 oraz organizacyjnych przepływach przetwarzających te informacje. Rozpocząłem również implementację innowacyjnego podejścia do agregacji danych w języku Java, które miało na celu zwiększenie wydajności i elastyczności systemu. Projekt został przekazany innym developerom do kontynuacji i wdrożenia w pełni funkcjonalnej wersji.",
+        role: "Specjalista ds. integracji - rozwój nowych interfejsów API, optymalizacja istniejących przepływów, analiza i rozwiązywanie błędów oraz wdrażanie nowych funkcjonalności w środowisku developerskim.",
+        methodology: "SCRUM z iteracjami dwutygodniowymi, codziennymi spotkaniami (daily), podziałem zadań na sprinty oraz wyceną czasochłonności pracy. Regularna komunikacja z zespołem developerskim, biznesowym i architektem.",
         key_contributions: [
-            "Tworzenie i testowanie przepływów integracyjnych SOAP/REST w IBM ACE.",
-            "Automatyzacja procesów integracyjnych i implementacja mikroserwisów.",
-            "Optymalizacja wydajności przepływów danych w środowiskach produkcyjnych.",
-            "Wsparcie klienta w implementacji i konfiguracji systemów zewnętrznych.",
+            "Tworzenie i testowanie przepływów integracyjnych SOAP/REST w IBM ACE na środowisku developerskim.",
+            "Wdrażanie nowych usług REST API u klienta, który wcześniej korzystał wyłącznie z protokołu SOAP, co przyczyniło się do modernizacji systemu.",
+            "Aktualizacja schematów danych przygotowywanych przez architektów oraz wdrażanie ich w przepływach testowych przed przekazaniem na produkcję.",
+            "Realizacja tygodniowego zadania dotyczącego standaryzacji struktury danych JSON, co umożliwiło płynną wymianę informacji między systemami klienckimi i przepływami organizacyjnymi.",
+            "Rozpoczęcie implementacji procesu agregacji danych w języku Java, mającego na celu zwiększenie wydajności i elastyczności systemu. Projekt został przekazany innym developerom do dalszej realizacji i pełnego wdrożenia.",
+            "Rozwiązywanie konfliktów w systemie kontroli wersji Git oraz utrzymanie stabilności kodu w środowisku developerskim.",
+            "Prowadzenie testów funkcjonalności na środowisku developerskim, a następnie przekazywanie kodu do testerów w celu weryfikacji penetracyjnej. Poprawa błędów zgłaszanych przez testerów i ponowne wdrażanie funkcjonalności.",
+            "Prezentowanie rozwiązań i wyników prac na spotkaniach z klientem, co pozwalało na bieżące uzgadnianie wymagań i wprowadzanie zmian w procesie.",
+            "Implementacja struktury danych w systemie AS400 oraz organizacyjnych przepływach przetwarzających informacje w formacie JSON.",
+            "Optymalizacja wydajności przepływów danych w środowisku developerskim.",
+            "Wsparcie administratorów i architektów w procesie weryfikacji i akceptacji rozwiązań do wdrożenia na produkcję."
         ],
-        duration: "Marzec 2023 - Marzec 2024",
+        duration: "Marzec 2023 - Marzec 2024"
+    },        
+
+    {
+        "title": "Testy i dokumentacja",
+        "technologies": {
+            "languages": [],
+            "tools": ["MS Office (Word, Excel)", "Postman", "Przeglądarki internetowe"]
+        },
+        "description": "Projekt obejmujący przygotowanie testów wydajności oraz dokumentacji technicznej dla produktu fizycznego klienta z branży energetycznej. Zadania obejmowały zapewnienie spełniania wymagań sprzętowych w oparciu o dokumentację producenta oraz testy w dedykowanych aplikacjach. Testy przeprowadzano w złożonym środowisku obejmującym interfejsy użytkownika i administratora, weryfikując zgodność z przypadkami testowymi opracowanymi wspólnie z klientem. Dodatkowo uczestniczyłem w codziennych spotkaniach typu daily, planowaniu zadań i wspólnej pracy nad dokumentacją w MS Office (Word, Excel). Projekt zakończył się dostarczeniem kompletu dokumentacji (technicznej, wydajnościowej i użytkowej) oraz raportów z testów, co potwierdziło zgodność produktu ze specyfikacją techniczną.",
+        "role": "Tester i dokumentalista - przygotowanie testów wydajnościowych, dokumentacji technicznej oraz raportów z testów dla klienta.",
+        "methodology": "SCRUM z codziennymi spotkaniami typu daily oraz ustalaniem zadań na kolejne dni.",
+        "key_contributions": [
+            "Przygotowanie szczegółowej dokumentacji technicznej i raportów testowych.",
+            "Przeprowadzenie testów wydajnościowych i funkcjonalnych w dedykowanych aplikacjach.",
+            "Weryfikacja zgodności produktu z wymaganiami technicznymi i specyfikacją klienta.",
+            "Koordynacja testów interfejsów użytkownika i administratora w środowisku przeglądarkowym.",
+            "Usprawnienie współpracy zespołowej dzięki efektywnemu zarządzaniu dokumentami w MS Office.",
+            "Opracowanie przypadków testowych we współpracy z klientem."
+        ],
+        "duration": "Styczeń 2023 - Marzec 2023"
     },
     {
         title: "System automatyzacji informacji o pracownikach",
         technologies: {
-            languages: ["Python3", "VBA"],
+            languages: ["Python3", "VBA", "Java"],
             frameworks: ["Office365", "Excel"],
-            tools: ["API Skype/Teams/SharePoint"],
+            tools: ["API Skype/Teams/SharePoint", "Outlook API"]
         },
-        description:
-            "System automatyzacji informacji o pracownikach, zarządzania profilami zawodowymi i ścieżkami rozwoju, wraz z funkcjonalnościami analitycznymi i raportowymi.",
-        role:
-            "Full-stack developer - rozwój aplikacji automatyzujących zarządzanie informacjami HR, integracja z API oraz wdrożenie powiadomień automatycznych.",
+        description: "Projekt polegający na stworzeniu systemu automatyzacji procesów biznesowych związanych z zarządzaniem informacjami o pracownikach, ich profilami zawodowymi oraz ścieżkami rozwoju. System oferował funkcjonalności analityczne, raportowe oraz integracje z zewnętrznymi narzędziami. Główne zadania obejmowały optymalizację zapytań VBA, integrację z pocztą Outlook, oraz opracowanie algorytmu generującego unikalne identyfikatory pracowników. System usprawnił procesy HR, umożliwił bardziej efektywne zarządzanie informacjami oraz ułatwił odnajdywanie pracowników w systemie.",
+        role: "Developer automatyzacji procesów biznesowych - rozwój i optymalizacja procesów HR, integracja z systemami zewnętrznymi oraz implementacja algorytmów wspierających zarządzanie informacjami.",
+        methodology: "SCRUM z regularnymi spotkaniami i raportowaniem postępów pracy.",
         key_contributions: [
-            "Projektowanie i rozwój funkcji analitycznych w Excel i VBA.",
-            "Automatyzacja procesów HR z wykorzystaniem Office365 API.",
-            "Integracja systemów zewnętrznych (Teams, Skype, SharePoint).",
+            "Projektowanie i rozwój funkcji analitycznych w Excel i VBA, w tym optymalizacja zapytań w celu poprawy wydajności makr.",
+            "Opracowanie algorytmu generującego uniwersalne identyfikatory pracowników (ID), umożliwiającego lepsze zarządzanie ich kontami i wyszukiwanie w systemie.",
+            "Integracja z Outlook API w celu automatyzacji korespondencji i zarządzania harmonogramami.",
+            "Automatyzacja procesów HR z wykorzystaniem Office365 API oraz narzędzi do zarządzania dokumentami.",
+            "Integracja z systemami zewnętrznymi, takimi jak Skype, Teams, SharePoint.",
+            "Tworzenie raportów analitycznych na podstawie danych HR oraz generowanie spersonalizowanych powiadomień.",
+            "Zarządzanie złożonymi procesami dokumentacyjnymi w Excel, w tym wdrożenie zaawansowanych formuł i makr."
         ],
-        duration: "Listopad 2022 - Marzec 2023",
+        duration: "Listopad 2022 - Marzec 2023"
     },
-    {
-        title: "Testy i dokumentacja",
-        technologies: {
-            languages: ["Python"],
-            tools: ["Pytest", "Sphinx", "Postman"],
-        },
-        description:
-            "Projekt obejmujący przygotowanie automatycznych testów integracyjnych i jednostkowych oraz dokumentacji technicznej dla systemu informatycznego klienta.",
-        role: "Tester i dokumentalista - przygotowanie skryptów testowych, dokumentacji technicznej oraz raportów z testów dla zespołu deweloperskiego.",
-        key_contributions: [
-            "Przygotowanie skryptów testowych przy użyciu Pytest.",
-            "Tworzenie dokumentacji technicznej za pomocą Sphinx.",
-            "Przeprowadzanie testów integracyjnych API z Postman.",
-        ],
-        duration: "Marzec 2022 - Marzec 2023",
-    },
+
     {
         title: "Staż z integracji systemów biznesowych",
         technologies: {
